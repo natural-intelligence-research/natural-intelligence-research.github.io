@@ -1,0 +1,97 @@
+- title: "Orphée"
+  images:
+    - "/assets/images/orphee-1.jpg"
+    - "/assets/images/orphee-2.jpg"
+  basic:
+    - label: "監督"
+      value: "松本泰章"
+    - label: "制作"
+      value: "ideätekt"
+    - label: "協力"
+      value:
+        - "西山昭雄（心拍変動センサーシステム）"
+        - "二瓶晃 （インタラクティブサウンド＆ライティングシステム）"
+        - "人長果月（CG シミュレーション）"
+  detail:
+    - label: "2024"
+      value:
+        - "松本泰章退任記念展"
+        - "嵯峨美術大学ギャラリー(京都)"
+    - label: "2023"
+      value:
+        - "International Conference on Interactive Digital Storytelling（ICIDS）2023"
+        - "10th ICIDS ART EXHIBITION"
+        - "KIITO Design and Creative Center KOBE"
+
+- title: "LICHT breath of light"
+  images:
+    - "/assets/images/LICHT-1.png"
+    - "/assets/images/LICHT-2.png"
+  basic:
+    - label: "制作"
+      value: "松本泰章"
+    - label: "原案"
+      value: "砥綿正之 松本泰章"
+    - label: "プログラミング"
+      value: "人長果月"
+    - label: "モデル"
+      value: "須藤絢乃"
+    - label: "サウンド"
+      value: "吹田哲二郎"
+    - label: "タイポグラフィー"
+      value: "Nicole Schmid"
+    - label: "VRシュミレーション"
+      value: "西山明雄"
+  detail:
+    - label: "協力"
+      value:
+        - "helmut schmid design"
+        - "岩城覚久（Text）"
+        - "William HALL（翻訳）"
+        - "池田精堂（インストール）"
+        - "西山昭雄（CG シミュレーション）"
+    - label: "撮影協力"
+      value:
+        - "一般社団法人IKUHART 企画"
+        - "認定NPO 法人アメニティ2000協会"
+        - "Dongree　中井浩史　川野昌通"
+    - label: "助成"
+      value: "JSPS 科研費20H01223"
+    - label: "2022"
+      value: "京都市立芸術大学ギャラリー @KCUA"
+
+- title: "Box of Eurydice"
+  images:
+    - "/assets/images/box_of_eurydice-1.jpg"
+    - "/assets/images/box_of_eurydice-2.jpg"
+  basic:
+    - label: "監督"
+      value: "松本泰章"
+    - label: "制作"
+      value: "松本泰章"
+    - label: "サウンド"
+      value: "吹田哲二郎"
+    - label: "プログラミング"
+      value: "西山明雄"
+    - label: "桐箱"
+      value: "箱藤株式会社"
+    - label: "銀器"
+      value: "清課堂"
+    - label: "調香"
+      value: "Scenery Scent 井上香苗"
+  detail:
+    - label: "2017-2019"
+      value:
+        - "Box of Eurydice"
+        - "Olfactory Art And Science Research"
+        - "香りとサウンドを用いた記憶想起のための作品"
+    - label: "2017"
+      value:
+        - "Eurydice"
+        - "堀川御池ギャラリー　京都"
+        - "匂いと映像、サウンドによるパフォーマンス作品"
+    - label: "2018"
+      value:
+        - "Eurydice"
+        - "WANÅS KONST Knislinge, Sweden."
+        - "匂いと映像による作品"
