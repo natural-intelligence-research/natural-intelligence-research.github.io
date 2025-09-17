@@ -1,0 +1,28 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.works table {
+  border-collapse: collapse;
+  width: 100%;
+  display: table;
+}
+
+.works table tr {
+  border:none;
+}
+.works table tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+.works table th, .works table td {
+  border:none;
+  padding: 3px 13px;
+  vertical-align: top;
+}
+
+.works table th {
+  text-align: left;
+  width: 12em;
+}

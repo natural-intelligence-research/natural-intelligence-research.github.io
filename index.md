@@ -9,34 +9,48 @@ layout: default
 
 ---
 
+<div class="works">
+
 {% for work in site.data.works %}
 
-## {{ work.title }}
+<h3>{{ work.title }}</h3>
 
+<table>
 {% for item in work.basic %}
-
-- {{item.label}}
+<tr>
+<th>{{item.label}}</th>
+  <td>
   {% if item.value.first %}
-  {% for v in item.value %} - {{ v }}
+  {% for v in item.value %}{{ v }}<br>
   {% endfor %}
-  {% else %} - {{ item.value }}
+  {% else %}{{ item.value }}
   {% endif %}
+  </td>
+</tr>
   {% endfor %}
+</table>
 
+<table>
 {% for item in work.detail %}
-
-- {{item.label}}
+<tr>
+<th>{{item.label}}</th>
+  <td>
   {% if item.value.first %}
-  {% for v in item.value %} - {{ v }}
+  {% for v in item.value %}{{ v }}<br>
   {% endfor %}
-  {% else %} - {{ item.value }}
+  {% else %}{{ item.value }}
   {% endif %}
+  </td>
+</tr>
   {% endfor %}
+</table>
 
-![{{ work.title }} fig.]({{ work.images[0] }})
-![{{ work.title }} fig.]({{ work.images[1] }})
+<img src="{{ work.images[0] }}" alt="{{ work.title }} fig.">
+<img src="{{ work.images[1] }}" alt="{{ work.title }} fig.">
 
 {% endfor %}
+
+</div>
 
 ---
 
