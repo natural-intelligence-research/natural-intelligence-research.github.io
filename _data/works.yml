@@ -95,3 +95,23 @@
         - "Eurydice"
         - "WANÅS KONST Knislinge, Sweden."
         - "匂いと映像による作品"
+
+- title: "Forbidden Colours"
+  images:
+    - "assets/images/Forbidden Colours1.jpg"
+    - "assets/images/Forbidden Colours22.jpg"
+  basic:
+    - label: "制作"
+      value:
+       - "松本泰章"
+       - "砥綿正之"
+    - label: "撮影協力"
+      value: "西山明雄"
+    - label: "編集"
+      value: "人長果月"
+  detail:
+    - label: "2015"
+      value:
+        - "Forbidden Colours"
+        - "out of place展　旧嵯峨御所大覚寺門跡　京都"
+        - "歴史と環境をテーマとしたサイトスペシフィック映像インスタレーション作品"
