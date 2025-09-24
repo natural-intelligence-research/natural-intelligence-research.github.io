@@ -141,12 +141,14 @@
 }
 
 
-
-
 footer {
   background: #F0F0F0;
   color: #231916;
   text-align: center;
-  padding: 2rem 0 50vh;
+  padding: 2rem 0;
   font-size: 0.8rem;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
