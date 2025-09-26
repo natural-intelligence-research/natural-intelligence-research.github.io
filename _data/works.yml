@@ -1,7 +1,7 @@
 - title: "Orphée"
   images:
-    - "/assets/images/orphee-1.jpg"
-    - "/assets/images/orphee-2.jpg"
+    - "/assets/images/works/orphee-1.webp"
+    - "/assets/images/works/orphee-2.webp"
   basic:
     - label: "監督"
       value: "松本泰章"
@@ -25,8 +25,8 @@
 
 - title: "LICHT breath of light"
   images:
-    - "/assets/images/LICHT-1.png"
-    - "/assets/images/LICHT-2.png"
+    - "/assets/images/works/LICHT-1.png"
+    - "/assets/images/works/LICHT-2.png"
   basic:
     - label: "制作"
       value: "松本泰章"
@@ -62,8 +62,8 @@
 
 - title: "Box of Eurydice"
   images:
-    - "/assets/images/box_of_eurydice-1.jpg"
-    - "/assets/images/box_of_eurydice-2.jpg"
+    - "/assets/images/works/box_of_eurydice-1.webp"
+    - "/assets/images/works/box_of_eurydice-2.webp"
   basic:
     - label: "監督"
       value: "松本泰章"
@@ -98,8 +98,8 @@
 
 - title: "Forbidden Colours"
   images:
-    - "assets/images/Forbidden Colours1.jpg"
-    - "assets/images/Forbidden Colours22.jpg"
+    - "/assets/images/works/Forbidden_Colours1.webp"
+    - "/assets/images/works/Forbidden_Colours22.webp"
   basic:
     - label: "制作"
       value:
