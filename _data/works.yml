@@ -98,8 +98,8 @@
 
 - title: "Forbidden Colours"
   images:
-    - "assets/images/Forbidden Colours1.jpg"
-    - "assets/images/Forbidden Colours22.jpg"
+    - "assets/images/Forbidden_Colours1.jpg"
+    - "assets/images/Forbidden_Colours22.jpg"
   basic:
     - label: "制作"
       value:
