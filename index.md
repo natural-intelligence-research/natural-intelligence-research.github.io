@@ -59,11 +59,3 @@ layout: default
 
 </div>
 {% endfor %}
-
-<footer class="footer">
-    <div class="inner">
-        <p class="text-center">
-            &copy;{{ site.time | date: '%Y' }} {{ site.author }}. All Rights Reserved
-        </p>
-    </div>
-</footer>
