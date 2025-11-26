@@ -2,14 +2,6 @@
 layout: default
 ---
 
-<div class="hero-area">
-    <div class="inner">
-        <img src="{{ 'assets/images/nir-logo.png' | relative_url }}" alt="{{ site.title }}" />
-        <p>{{ site.description }}</p>
-        <p>{{ site.detail }}</p>
-    </div>
-</div>
-
 {% for work in site.data.works %}
 
 <div class="works">
