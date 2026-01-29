@@ -1,6 +1,5 @@
----
----
-
+--- 
+--- 
 @import "{{ site.theme }}";
 
 .header-contents {
@@ -99,12 +98,15 @@ nav a:hover {
 .content-1 {
   order: 1;
 }
+
 .content-2 {
   order: 2;
 }
+
 .content-3 {
   order: 3;
 }
+
 .content-4 {
   order: 4;
 }
@@ -113,12 +115,15 @@ nav a:hover {
   .content-1 {
     order: 1;
   }
+
   .content-2 {
     order: 4;
   }
+
   .content-3 {
     order: 2;
   }
+
   .content-4 {
     order: 3;
   }
@@ -141,6 +146,7 @@ nav a:hover {
 .works table tr {
   border: none;
 }
+
 .works table tr:nth-child(even) {
   background-color: #ffffff;
 }
@@ -162,6 +168,62 @@ nav a:hover {
   height: 400px;
   object-fit: cover;
   display: block;
+}
+
+.our-mission {
+  margin: 1rem 1.5rem 0;
+  padding-bottom: 1.5rem;
+}
+
+.our-mission p {
+  line-height: 1.8;
+}
+
+.profile {
+  margin: 1.5rem 1.5rem;
+}
+
+.members {
+  margin: 0;
+  padding: 0;
+}
+
+.member {
+  position: relative;
+  padding: 16px 0 16px 32px;
+  /* 左の線ぶん余白 */
+}
+
+.member::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  bottom: 16px;
+  width: 2px;
+  background: #f0f0f0;
+  /* 青い縦線 */
+}
+
+.member+.member {
+  margin-top: 8px;
+  /* 人ごとの間隔 */
+}
+
+.members .member dt {
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.members .member dd {
+  margin-top: 16px;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #6b7280;
+  /* グレー */
 }
 
 footer {
