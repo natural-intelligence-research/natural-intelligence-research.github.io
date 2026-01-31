@@ -5,15 +5,31 @@ layout: default
 <div>
   <div id="about" class="hero-area">
     <div class="inner">
-      <img
-        src="{{ 'assets/images/nir-logo.png' | relative_url }}"
-        alt="{{ site.title }}"
-      />
+      <img src="{{ 'assets/images/nir-logo.png' | relative_url }}" alt="{{ site.title }}" />
       <p>{{ site.description }}</p>
       <p>{{ site.detail }}</p>
     </div>
   </div>
 
+  <div id="information">
+    <div class="title-header">
+      <h2>Information</h2>
+    </div>
+    <div class="contents-box">
+      <dl class="dl-list">
+        {% for item in site.data.information %}
+        <div class="dl-item">
+          <dt>{{ item.title }}</dt>
+          <dd>{{ item.detail | newline_to_br }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </div>
+  </div>
+<div id="recent-projects">
+  <div class="title-header">
+    <h2>Recent Projects</h2>
+  </div>
   {% for work in site.data.works limit:2 %}
   <div class="works">
     <section class="content-1">
@@ -54,4 +70,5 @@ layout: default
     </section>
   </div>
   {% endfor %}
+</div>
 </div>
