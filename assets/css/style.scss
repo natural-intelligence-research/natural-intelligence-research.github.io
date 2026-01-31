@@ -3,18 +3,28 @@
 
 @import "{{ site.theme }}";
 
-.header-contents {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+.site-header {
+  width: 100%;
   border-bottom: 1px solid #ddd;
 }
 
-.logo img {
+.header-contents {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap:wrap;
+  gap: 0.5rem;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
   padding: 0.5rem 1rem;
-  height: 56px;
+}
+
+.logo img {
+  height: 40px;
+  display:block;
 }
 
 nav {
@@ -43,6 +53,21 @@ nav a.is-current {
 
 nav a:hover {
   background-color: #f0f0f0;
+}
+
+@media (max-width: 414px){
+  nav{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+    gap: 0.25rem;
+  }
+
+  nav a{
+    padding: 0.5rem 0.75rem;   
+    height:auto;
+  }
 }
 
 .markdown-body h1 {
