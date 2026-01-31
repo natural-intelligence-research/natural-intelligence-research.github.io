@@ -1,29 +1,48 @@
 --- 
 --- 
+
 @import "{{ site.theme }}";
 
 .header-contents {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  align-items: stretch;
   border-bottom: 1px solid #ddd;
 }
 
 .logo img {
-  height: 40px;
-  display: block;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  height: 56px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a,
+nav a:hover,
+nav a:focus,
+nav a:active {
+  text-decoration: none;
 }
 
 nav a {
-  margin-left: 20px;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1rem;
   color: #333;
   font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a.is-current {
+  font-weight: 700;
 }
 
 nav a:hover {
-  color: #007acc;
+  background-color: #f0f0f0;
 }
 
 .markdown-body h1 {
@@ -170,17 +189,16 @@ nav a:hover {
   display: block;
 }
 
-.our-mission {
-  margin: 1rem 1.5rem 0;
-  padding-bottom: 1.5rem;
+.title-header  {
+  padding: 0 1.5rem;
+}
+
+.contents-box {
+  padding: 1rem 1.5rem;
 }
 
 .our-mission p {
   line-height: 1.8;
-}
-
-.profile {
-  margin: 1.5rem 1.5rem;
 }
 
 .members {
@@ -190,7 +208,7 @@ nav a:hover {
 
 .member {
   position: relative;
-  padding: 16px 0 16px 32px;
+  padding: 1rem 0 1rem 2rem;
   /* 左の線ぶん余白 */
 }
 
