@@ -32,7 +32,7 @@ nav a {
   display: inline-flex;
   align-items: center;
   padding: 0 1rem;
-  color: #333;
+  color: #24292e;
   font-weight: 500;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -85,7 +85,7 @@ nav a:hover {
 
 .hero-area p {
   font-size: 1rem;
-  color: #231916;
+  color: #24292e;
   margin: 2em 0 0 0;
 }
 
@@ -150,7 +150,7 @@ nav a:hover {
 
 .works h3 {
   font-size: 1.7rem;
-  color: #231916;
+  color: #24292e;
   margin: 1em 1.5rem;
 }
 
@@ -198,6 +198,7 @@ nav a:hover {
 }
 
 .our-mission p {
+  font-size: 0.8rem;
   line-height: 1.8;
 }
 
@@ -216,42 +217,40 @@ nav a:hover {
   content: "";
   position: absolute;
   left: 0;
-  top: 16px;
-  bottom: 16px;
+  top: 1rem;
+  bottom: 1rem;
   width: 2px;
   background: #f0f0f0;
-  /* 青い縦線 */
 }
 
 .dl-item+.dl-item {
   margin-top: 8px;
-  /* 人ごとの間隔 */
 }
 
 .dl-list .dl-item dt {
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
 }
 
 .dl-list .dl-item dd {
-  margin-top: 16px;
+  margin-top: 1rem;
   padding: 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5;
-  color: #6b7280;
-  /* グレー */
+  color: #24292e;
 }
 
 footer {
-  background: #f0f0f0;
-  color: #231916;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+  color: #24292e;
   text-align: center;
-  padding: 2rem 0;
   font-size: 0.8rem;
+  border-top: 1px solid #ddd;
 }
 
 .footer p {
-  margin-bottom: 0;
+  padding: 1.5rem 0;
 }
