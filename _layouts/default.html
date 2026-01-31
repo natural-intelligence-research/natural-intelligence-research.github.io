@@ -1,67 +1,50 @@
 <!doctype html>
 <html lang="{{ site.lang | default: 'en-US' }}">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    {% seo %}
-    <link
-      rel="stylesheet"
-      href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
-    />
-    {% include head-custom.html %}
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <header class="container-lg">
-      <!--
-	   <div class="header-contents">
-	        <a href="/" class="logo">
-	          <img
-	            src="{{ 'assets/images/nir-logo.png' | relative_url }}"
-	            alt="{{ site.title }}"
-	          />
-	        </a>
-	
-	        <nav>
-	          <a href="/about">about</a>
-	        </nav>
-	   </div>
-      -->
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" />
+  {% include head-custom.html %}
+</head>
 
-      <div>
-        <div id="about" class="hero-area">
-          <div class="inner">
-            <img
-              src="{{ 'assets/images/nir-logo.png' | relative_url }}"
-              alt="{{ site.title }}"
-            />
-            <p>{{ site.description }}</p>
-            <p>{{ site.detail }}</p>
-          </div>
-        </div>
+<body>
+  <header class="site-header">
+    <div class="container-lg">
+      <div class="header-contents">
+        <a href="/" class="logo">
+          <img src="{{ 'assets/images/nir-logo.png' | relative_url }}" alt="{{ site.title }}" />
+        </a>
+
+        <nav>
+          <a href="/" class="{% if page.url == '/' %}is-current{% endif %}">Top</a>
+          <a href="/projects" class="{% if page.url contains '/projects' %}is-current{% endif %}">Projects</a>
+          <a href="/team" class="{% if page.url contains '/team' %}is-current{% endif %}">Team</a>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div class="container-lg markdown-body">{{ content }}</div>
+  <div class="container-lg markdown-body">{{ content }}</div>
 
-    <footer class="container-lg footer">
-      <div class="inner">
-        <p class="text-center">
-          &copy;{{ site.time | date: '%Y' }} {{ site.author }}. All Rights
-          Reserved
-        </p>
-      </div>
-    </footer>
+  <footer class="site-footer">
+  <div class="container-lg footer">
+    <div class="inner">
+      <p class="text-center">
+        &copy;{{ site.time | date: '%Y' }} {{ site.author }}. All Rights Reserved
+      </p>
+    </div>
+  </div>
+</footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
-      integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      anchors.add();
-    </script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+    integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+  <script>
+    anchors.add();
+  </script>
+</body>
+
 </html>

@@ -1,14 +1,25 @@
----
----
+--- 
+--- 
 
 @import "{{ site.theme }}";
+
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
 
 .header-contents {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.logo {
+  display: flex;
   align-items: center;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
 }
 
 .logo img {
@@ -16,15 +27,47 @@
   display: block;
 }
 
-nav a {
-  margin-left: 20px;
+nav {
+  display: flex;
+}
+
+nav a,
+nav a:hover,
+nav a:focus,
+nav a:active {
   text-decoration: none;
-  color: #333;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: #24292e;
   font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a.is-current {
+  font-weight: 700;
 }
 
 nav a:hover {
-  color: #007acc;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 414px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  nav a {
+    padding: 0.75rem 0.75rem;
+    height: auto;
+  }
 }
 
 .markdown-body h1 {
@@ -67,7 +110,7 @@ nav a:hover {
 
 .hero-area p {
   font-size: 1rem;
-  color: #231916;
+  color: #24292e;
   margin: 2em 0 0 0;
 }
 
@@ -99,12 +142,15 @@ nav a:hover {
 .content-1 {
   order: 1;
 }
+
 .content-2 {
   order: 2;
 }
+
 .content-3 {
   order: 3;
 }
+
 .content-4 {
   order: 4;
 }
@@ -113,12 +159,15 @@ nav a:hover {
   .content-1 {
     order: 1;
   }
+
   .content-2 {
     order: 4;
   }
+
   .content-3 {
     order: 2;
   }
+
   .content-4 {
     order: 3;
   }
@@ -126,7 +175,7 @@ nav a:hover {
 
 .works h3 {
   font-size: 1.7rem;
-  color: #231916;
+  color: #24292e;
   margin: 1em 1.5rem;
 }
 
@@ -141,6 +190,7 @@ nav a:hover {
 .works table tr {
   border: none;
 }
+
 .works table tr:nth-child(even) {
   background-color: #ffffff;
 }
@@ -164,14 +214,71 @@ nav a:hover {
   display: block;
 }
 
-footer {
+.title-header {
+  padding: 0 1.5rem;
+}
+
+.contents-box {
+  padding: 1rem 1.5rem;
+}
+
+.our-mission p {
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+.dl-list {
+  margin: 0;
+  padding: 0;
+}
+
+.dl-item {
+  position: relative;
+  padding: 1rem 0 1rem 2rem;
+  /* 左の線ぶん余白 */
+}
+
+.dl-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  bottom: 1rem;
+  width: 2px;
   background: #f0f0f0;
-  color: #231916;
+}
+
+.dl-item+.dl-item {
+  margin-top: 8px;
+}
+
+.dl-list .dl-item dt {
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.dl-list .dl-item dd {
+  margin-top: 1rem;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #24292e;
+}
+
+.site-footer {
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+
+.footer {
+  color: #24292e;
   text-align: center;
-  padding: 2rem 0;
   font-size: 0.8rem;
 }
 
 .footer p {
-  margin-bottom: 0;
+  padding: 1.5rem 0;
+  margin: 0;
 }
