@@ -18,9 +18,9 @@ layout: default
       <h2>Members</h2>
     </div>
     <div class="contents-box">
-      <dl class="members">
+      <dl class="dl-list">
         {% for item in site.data.members %}
-        <div class="member">
+        <div class="dl-item">
           <dt>{{ item.name }}</dt>
           <dd>{{ item.profile | newline_to_br }}</dd>
         </div>

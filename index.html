@@ -14,6 +14,22 @@ layout: default
     </div>
   </div>
 
+  <div id="information">
+    <div class="title-header">
+      <h2>information</h2>
+    </div>
+    <div class="contents-box">
+      <dl class="dl-list">
+        {% for item in site.data.members %}
+        <div class="dl-item">
+          <dt>{{ item.name }}</dt>
+          <dd>{{ item.profile | newline_to_br }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </div>
+  </div>
+
   {% for work in site.data.works limit:2%}
   <div class="works">
     <section class="content-1">
