@@ -18,7 +18,7 @@
         <a href="/" class="logo">
           <img src="{{ 'assets/images/nir-logo.png' | relative_url }}" alt="{{ site.title }}" />
         </a>
-        
+
         <nav>
           <a href="/" class="{% if page.url == '/' %}is-current{% endif %}">Top</a>
           <a href="/projects" class="{% if page.url contains '/projects' %}is-current{% endif %}">Projects</a>
@@ -30,14 +30,15 @@
 
   <div class="container-lg markdown-body">{{ content }}</div>
 
-  <footer class="container-lg footer">
+  <footer class="site-footer">
+  <div class="container-lg footer">
     <div class="inner">
       <p class="text-center">
-        &copy;{{ site.time | date: '%Y' }} {{ site.author }}. All Rights
-        Reserved
+        &copy;{{ site.time | date: '%Y' }} {{ site.author }}. All Rights Reserved
       </p>
     </div>
-  </footer>
+  </div>
+</footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
     integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
