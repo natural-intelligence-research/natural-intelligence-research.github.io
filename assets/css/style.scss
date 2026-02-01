@@ -1,5 +1,5 @@
---- 
---- 
+---
+---
 
 @import "{{ site.theme }}";
 
@@ -44,7 +44,9 @@ nav a {
   padding: 0 1rem;
   color: #24292e;
   font-weight: 500;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 nav a.is-current {
@@ -248,7 +250,7 @@ nav a:hover {
   background: #f0f0f0;
 }
 
-.dl-item+.dl-item {
+.dl-item + .dl-item {
   margin-top: 8px;
 }
 
