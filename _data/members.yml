@@ -1,30 +1,46 @@
-- name: 松本泰章
+- name:
+    ja: 松本泰章
+    en: Yasuaki Matsumoto
   profile: |
     メディアアーティスト
     嵯峨美術大学名誉教授
-- name: 西山明雄
+- name:
+    ja: 西山明雄
+    en: Akio Nishiyama
   profile: |
     ソフトウェアエンジニア
     パナソニックホールディングス株式会社 技術部門
-- name: 瀬川浩司
+- name:
+    ja: 瀬川浩司
+    en: Hiroshi Segawa
   profile: |
     ソフトウェア・サウンドエンジニア
     大阪芸術大学音楽学科卒
-- name: 芦田眞綾
+- name:
+    ja: 芦田眞綾
+    en: Maaya Ashida
   profile: |
     UI/UXデザイナー
-- name: 大塚直也
+- name:
+    ja: 大塚直也
+    en: Naoya Otsuka
   profile: |
     ソフトウェアエンジニア
-- name: 上田香
+- name:
+    ja: 上田香
+    en: Kaori Ueda
   profile: |
     テキスタイルデザイナー・研究者
     神戸大学大学院 人間発達環境学研究科 准教授
-- name: 宮田哲
+- name:
+    ja: 宮田哲
+    en: Satoshi Miyata
   profile: |
     エンジニア
     TOA株式会社
-- name: 岩﨑陽子
+- name:
+    ja: 岩﨑陽子
+    en: Yoko Iwasaki
   profile: |
     美学・哲学、嗅覚アート研究者
     嵯峨美術短期大学 教授

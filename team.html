@@ -21,7 +21,7 @@ layout: default
       <dl class="dl-list">
         {% for item in site.data.members %}
         <div class="dl-item">
-          <dt>{{ item.name }}</dt>
+          <dt>{{ item.name.ja }} ({{ item.name.en }})</dt>
           <dd>{{ item.profile | newline_to_br }}</dd>
         </div>
         {% endfor %}
