@@ -39,12 +39,17 @@ layout: default
         {% for item in work.basic %}
         <tr>
           <th>{{item.label}}</th>
-          <td>
-            {% if item.value.first %} {% for v in item.value %}{{ v }}<br />
-            {% endfor %} {% else %}{{ item.value }} {% endif %}
-          </td>
-        </tr>
-        {% endfor %}
+	  <td>
+	    {% if item.value.first %} {% for v in item.value %}{{ v }}<br />
+	    {% endfor %} {% else %}{{ item.value }} {% endif %}
+	  </td>
+	</tr>
+	{% endfor %}
+	<tr>
+	  <th>
+	    <td><a href="{{ work.youtube }}">video</a></td>
+	  </th>
+	</tr>
       </table>
     </section>
 
