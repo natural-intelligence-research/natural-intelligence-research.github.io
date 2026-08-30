@@ -1,3 +1,59 @@
+- title: "small hands"
+  images:
+    - "/assets/images/works/small_hands_3.webp"
+    - "/assets/images/works/small_hands_S.webp"
+  youtube: "https://www.youtube.com/watch?v=GMVELwl2goc"
+  basic:
+    - label: "Director"
+      value: "松本泰章 Matsumoto Yasuaki"
+    - label: "Systems Engineering"
+      value:
+        - "Nisiyama Akio"
+        - "Segawa Hiroshi"
+        - "Miyata Satoshi"
+    - label: "協力"
+      value:
+        - "西山明雄 (インタラクティブ画像解析プログラム)"
+        - "瀬川浩司 (インタラクティブサウンド)"
+        - "宮田哲 (立体音響)"
+        - "TOA株式会社"
+  detail:
+    - label: "主催"
+      value: "嵯峨芸・嵯峨美 同窓会"
+    - label: "2026"
+      value:
+        - "嵯峨美術大学・嵯峨美術短期大学 大阪サテライトキャンパス弘洲会館"
+        - "アートスペース天王寺"
+- title: "utsusemi"
+  images:
+    - "/assets/images/works/utsusemi_02S.webp"
+    - "/assets/images/works/utsusemi_.webp"
+  youtube: "https://www.youtube.com/watch?v=XhJMhgQRhXI"
+  basic:
+    - label: "Production"
+      value:
+        - "上田香"
+        - "岩﨑陽子"
+    - label: "Director"
+      value: "松本泰章"
+    - label: "Systems Engineering"
+      value:
+        - "西山明雄"
+        - "瀬川浩司"
+    - label: "Polymer Chemistry"
+      value: "榎本雅穗"
+    - label: "Weaving"
+      value: "桂機業店"
+  detail:
+    - label: "Cooperation"
+      value:
+        - "コーケン フード＆フレーバー株式会社"
+        - "nïr / natural intelligence research"
+    - label: "2026"
+      value:
+        - "Kyoto Saga University of Arts Gallery"
+        - "\"Art Space Saga\""
+        - "嵯峨美術大学・嵯峨美術短期大学 附属ギャラリー「アートスペース嵯峨」"
 - title: "Orphée"
   images:
     - "/assets/images/works/orphee-1.webp"
