@@ -17,7 +17,8 @@ layout: default
     </div>
     <div class="contents-box">
       <dl class="dl-list">
-        {% for item in site.data.information %}
+	{% assign information = site.data.information | where: "done", false %}
+	{% for item in information %}
         <div class="dl-item">
           <dt>{{ item.title }}</dt>
           <dd>{{ item.detail | newline_to_br }}</dd>
