@@ -2,6 +2,7 @@
   images:
     - "/assets/images/works/orphee-1.webp"
     - "/assets/images/works/orphee-2.webp"
+  youtube: "https://www.youtube.com/watch?v=Qltpray_NBg"
   basic:
     - label: "監督"
       value: "松本泰章"
@@ -27,6 +28,7 @@
   images:
     - "/assets/images/works/LICHT-1.webp"
     - "/assets/images/works/LICHT-2.webp"
+  youtube: "https://www.youtube.com/watch?v=D0-A_00wR5U"
   basic:
     - label: "制作"
       value: "松本泰章"
@@ -64,6 +66,7 @@
   images:
     - "/assets/images/works/box_of_eurydice-1.webp"
     - "/assets/images/works/box_of_eurydice-2.webp"
+  youtube: "https://www.youtube.com/watch?v=5ysPcpWR_EU"
   basic:
     - label: "監督"
       value: "松本泰章"
@@ -100,6 +103,7 @@
   images:
     - "/assets/images/works/Forbidden_Colours1.webp"
     - "/assets/images/works/Forbidden_Colours22.webp"
+  youtube: "https://www.youtube.com/watch?v=G_kJv0-lG7U"
   basic:
     - label: "制作"
       value:
