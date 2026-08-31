@@ -230,7 +230,8 @@ nav a:hover {
 /* ==========================================================================
    Mission & Definition List
    ========================================================================== */
-.our-mission p {
+.our-mission p,
+.contact p {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-relaxed);
 }
