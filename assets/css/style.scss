@@ -3,9 +3,45 @@
 
 @import "{{ site.theme }}";
 
+/* ==========================================================================
+   CSS Variables / Theme Settings
+   ========================================================================== */
+:root {
+  /* Colors */
+  --color-text: #24292e;
+  --color-border: #dddddd;
+  --color-bg-light: #f0f0f0;
+  --color-bg-white: #ffffff;
+  --color-overlay: rgba(255, 255, 255, 0.5);
+
+  /* Typography */
+  --font-size-sm: 0.8rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.7rem;
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+  --line-height-relaxed: 1.8;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  /* Layout & Dimensions */
+  --header-logo-height: 40px;
+  --works-img-height: 400px;
+  --transition-speed: 0.2s;
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
 .site-header {
   width: 100%;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .header-contents {
@@ -13,17 +49,17 @@
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--space-sm);
 }
 
 .logo {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: var(--space-sm) var(--space-md);
 }
 
 .logo img {
-  height: 40px;
+  height: var(--header-logo-height);
   display: block;
 }
 
@@ -31,20 +67,14 @@ nav {
   display: flex;
 }
 
-nav a,
-nav a:hover,
-nav a:focus,
-nav a:active {
-  text-decoration: none;
-}
-
 nav a {
   display: inline-flex;
   align-items: center;
-  padding: 0 1rem;
-  color: #24292e;
+  padding: 0 var(--space-md);
+  color: var(--color-text);
   font-weight: 500;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
 nav a.is-current {
@@ -52,16 +82,15 @@ nav a.is-current {
 }
 
 nav a:hover {
-  background-color: #f0f0f0;
+  background-color: var(--color-bg-light);
 }
 
 @media (max-width: 414px) {
   nav {
     width: 100%;
-    display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 0.25rem;
+    gap: var(--space-xs);
   }
 
   nav a {
@@ -70,15 +99,27 @@ nav a:hover {
   }
 }
 
+/* ==========================================================================
+   Base Utilities
+   ========================================================================== */
 .markdown-body h1 {
   display: none;
 }
 
+.title-header {
+  padding: 0 var(--space-lg);
+}
+
+.contents-box {
+  padding: var(--space-md) var(--space-lg);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
 .hero-area {
   width: 100%;
-  background-image: url("/assets/images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("/assets/images/hero-bg.jpg") center / cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -89,11 +130,8 @@ nav a:hover {
 .hero-area::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
+  inset: 0;
+  background: var(--color-overlay);
   z-index: 1;
 }
 
@@ -105,12 +143,13 @@ nav a:hover {
 
 .hero-area img {
   max-width: 100%;
+  height: auto;
   background-color: transparent;
 }
 
 .hero-area p {
-  font-size: 1rem;
-  color: #24292e;
+  font-size: var(--font-size-base);
+  color: var(--color-text);
   margin: 2em 0 0 0;
 }
 
@@ -120,6 +159,9 @@ nav a:hover {
   }
 }
 
+/* ==========================================================================
+   Works Section
+   ========================================================================== */
 .works {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +172,13 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-flow: column;
+}
+
+/* PC表示時のみ order を変更 */
+@media (min-width: 769px) {
+  .content-2 { order: 4; }
+  .content-3 { order: 2; }
+  .content-4 { order: 3; }
 }
 
 @media (max-width: 768px) {
@@ -139,52 +187,17 @@ nav a:hover {
   }
 }
 
-.content-1 {
-  order: 1;
-}
-
-.content-2 {
-  order: 2;
-}
-
-.content-3 {
-  order: 3;
-}
-
-.content-4 {
-  order: 4;
-}
-
-@media (min-width: 768px) {
-  .content-1 {
-    order: 1;
-  }
-
-  .content-2 {
-    order: 4;
-  }
-
-  .content-3 {
-    order: 2;
-  }
-
-  .content-4 {
-    order: 3;
-  }
-}
-
 .works h3 {
-  font-size: 1.7rem;
-  color: #24292e;
-  margin: 1em 1.5rem;
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+  margin: 1em var(--space-lg);
 }
 
 .works table {
-  font-size: 0.8rem;
-  margin: 1rem 1.5rem;
+  font-size: var(--font-size-sm);
+  margin: var(--space-md) var(--space-lg);
   border-collapse: collapse;
-  width: calc(100% - 3rem);
-  display: table;
+  width: calc(100% - (var(--space-lg) * 2));
 }
 
 .works table tr {
@@ -192,7 +205,7 @@ nav a:hover {
 }
 
 .works table tr:nth-child(even) {
-  background-color: #ffffff;
+  background-color: var(--color-bg-white);
 }
 
 .works table th,
@@ -209,22 +222,17 @@ nav a:hover {
 
 .works img {
   max-width: 100%;
-  height: 400px;
+  height: var(--works-img-height);
   object-fit: cover;
   display: block;
 }
 
-.title-header {
-  padding: 0 1.5rem;
-}
-
-.contents-box {
-  padding: 1rem 1.5rem;
-}
-
+/* ==========================================================================
+   Mission & Definition List
+   ========================================================================== */
 .our-mission p {
-  font-size: 0.8rem;
-  line-height: 1.8;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
 }
 
 .dl-list {
@@ -234,51 +242,53 @@ nav a:hover {
 
 .dl-item {
   position: relative;
-  padding: 1rem 0 1rem 2rem;
-  /* 左の線ぶん余白 */
+  padding: var(--space-md) 0 var(--space-md) var(--space-xl);
 }
 
 .dl-item::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 1rem;
-  bottom: 1rem;
+  top: var(--space-md);
+  bottom: var(--space-md);
   width: 2px;
-  background: #f0f0f0;
+  background: var(--color-bg-light);
 }
 
-.dl-item+.dl-item {
+.dl-item + .dl-item {
   margin-top: 8px;
 }
 
 .dl-list .dl-item dt {
   font-style: normal;
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: var(--line-height-tight);
 }
 
 .dl-list .dl-item dd {
-  margin-top: 1rem;
+  margin-top: var(--space-md);
   padding: 0;
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: #24292e;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
 }
 
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 .site-footer {
   width: 100%;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--color-border);
 }
 
 .footer {
-  color: #24292e;
+  color: var(--color-text);
   text-align: center;
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
 }
 
 .footer p {
-  padding: 1.5rem 0;
+  padding: var(--space-lg) 0;
   margin: 0;
 }
