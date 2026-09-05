@@ -6,3 +6,4 @@ _site/
 **/*.swp
 env
 Gemfile.lock
+vendor/
