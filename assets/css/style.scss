@@ -314,11 +314,11 @@ pre {
   display: block;
 }
 
-nav {
+.site-nav {
   display: flex;
 }
 
-nav a {
+.site-nav a {
   display: inline-flex;
   align-items: center;
   padding: 0 var(--space-md);
@@ -328,23 +328,23 @@ nav a {
   transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
-nav a.is-current {
+.site-nav a.is-current {
   font-weight: 700;
 }
 
-nav a:hover {
+.site-nav a:hover {
   background-color: var(--color-bg-light);
 }
 
 @media (max-width: $breakpoint-navigation) {
-  nav {
+  .site-nav {
     width: 100%;
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: var(--space-xs);
   }
 
-  nav a {
+  .site-nav a {
     padding: 0.75rem 0.75rem;
     height: auto;
   }
@@ -409,12 +409,14 @@ nav a:hover {
 /* ==========================================================================
    Works Section
    ========================================================================== */
-.works {
+.work {
   display: flex;
   flex-wrap: wrap;
 }
 
-.works section {
+.work__summary,
+.work__details,
+.work__image {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -423,24 +425,26 @@ nav a:hover {
 
 /* PC表示時のみ order を変更 */
 @media (min-width: $breakpoint-work-grid) {
-  .content-2 { order: 4; }
-  .content-3 { order: 2; }
-  .content-4 { order: 3; }
+  .work__details { order: 4; }
+  .work__image--primary { order: 2; }
+  .work__image--secondary { order: 3; }
 }
 
 @media (max-width: $breakpoint-stacked-layout) {
-  .works section {
+  .work__summary,
+  .work__details,
+  .work__image {
     width: 100%;
   }
 }
 
-.works h3 {
+.work h3 {
   font-size: var(--font-size-lg);
   color: var(--color-text);
   margin: 1em var(--space-lg);
 }
 
-.works .work-metadata {
+.work .work-metadata {
   font-size: var(--font-size-sm);
   margin: var(--space-md) var(--space-lg);
   width: calc(100% - (var(--space-lg) * 2));
@@ -485,7 +489,7 @@ nav a:hover {
   border: 0;
 }
 
-.works img {
+.work img {
   max-width: 100%;
   height: var(--works-img-height);
   object-fit: cover;

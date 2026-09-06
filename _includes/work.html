@@ -1,5 +1,5 @@
-<div class="works">
-  <section class="content-1">
+<div class="work">
+  <section class="work__summary">
     <h3>{{ work.title }}</h3>
     <dl class="work-metadata">
       {% for item in work.basic %}
@@ -21,7 +21,7 @@
     </dl>
   </section>
   
-  <section class="content-2">
+  <section class="work__details">
     <dl class="work-metadata">
       {% for item in work.detail %}
       <div class="work-metadata__item">
@@ -38,11 +38,11 @@
     </dl>
   </section>
   
-  <section class="content-3">
+  <section class="work__image work__image--primary">
     <img src="{{ work.images[0] }}" alt="{{ work.title }} fig." />
   </section>
   
-  <section class="content-4">
+  <section class="work__image work__image--secondary">
     <img src="{{ work.images[1] }}" alt="{{ work.title }} fig." />
   </section>
 </div>
