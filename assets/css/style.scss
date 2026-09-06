@@ -106,46 +106,8 @@ ol {
   margin-bottom: 0;
 }
 
-ol ol,
-ul ol {
-  list-style-type: lower-roman;
-}
-
-ul ul ol,
-ul ol ol,
-ol ul ol,
-ol ol ol {
-  list-style-type: lower-alpha;
-}
-
 dd {
   margin-left: 0;
-}
-
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-td,
-th {
-  padding: 0;
-}
-
-blockquote {
-  margin: 0;
-}
-
-code,
-tt,
-pre {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 12px;
-}
-
-pre {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -172,12 +134,8 @@ pre {
 }
 
 .site-content p,
-.site-content blockquote,
 .site-content ul,
-.site-content ol,
-.site-content dl,
-.site-content table,
-.site-content pre {
+.site-content dl {
   margin-top: 0;
   margin-bottom: var(--space-md);
 }
@@ -223,14 +181,6 @@ pre {
 .site-content ul,
 .site-content ol {
   padding-left: 2em;
-}
-
-.site-content ul ul,
-.site-content ul ol,
-.site-content ol ol,
-.site-content ol ul {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .site-content li {
@@ -367,7 +317,7 @@ pre {
   z-index: 1;
 }
 
-.hero-area .inner {
+.hero-area__inner {
   position: relative;
   z-index: 2;
   padding: 0 25%;
@@ -386,7 +336,7 @@ pre {
 }
 
 @media (max-width: $breakpoint-stacked-layout) {
-  .hero-area .inner {
+  .hero-area__inner {
     padding: 0 10%;
   }
 }
