@@ -1,36 +1,41 @@
 <div class="works">
   <section class="content-1">
     <h3>{{ work.title }}</h3>
-    <table>
+    <dl class="work-metadata">
       {% for item in work.basic %}
-      <tr>
-	<th>{{item.label}}</th>
-	<td>
-	  {% if item.value.first %} {% for v in item.value %}{{ v }}<br />
-	  {% endfor %} {% else %}{{ item.value }} {% endif %}
-	</td>
-      </tr>
+      <div class="work-metadata__item">
+        <dt>{{ item.label }}</dt>
+        <dd>
+          <ul class="work-metadata__values">
+            {% for value in item.value %}
+            <li>{{ value }}</li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </div>
       {% endfor %}
-      <tr>
-	<th>
-	  <td><a href="{{ work.youtube }}">video</a></td>
-	</th>
-      </tr>
-    </table>
+      <div class="work-metadata__item">
+        <dt><span class="visually-hidden">Video</span></dt>
+        <dd><a href="{{ work.youtube }}">video</a></dd>
+      </div>
+    </dl>
   </section>
   
   <section class="content-2">
-    <table>
+    <dl class="work-metadata">
       {% for item in work.detail %}
-      <tr>
-	<th>{{item.label}}</th>
-	<td>
-	  {% if item.value.first %} {% for v in item.value %}{{ v }}<br />
-	  {% endfor %} {% else %}{{ item.value }} {% endif %}
-	</td>
-      </tr>
+      <div class="work-metadata__item">
+        <dt>{{ item.label }}</dt>
+        <dd>
+          <ul class="work-metadata__values">
+            {% for value in item.value %}
+            <li>{{ value }}</li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </div>
       {% endfor %}
-    </table>
+    </dl>
   </section>
   
   <section class="content-3">

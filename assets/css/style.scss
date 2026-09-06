@@ -193,31 +193,49 @@ nav a:hover {
   margin: 1em var(--space-lg);
 }
 
-.works table {
+.works .work-metadata {
   font-size: var(--font-size-sm);
   margin: var(--space-md) var(--space-lg);
-  border-collapse: collapse;
   width: calc(100% - (var(--space-lg) * 2));
 }
 
-.works table tr {
-  border: none;
-}
-
-.works table tr:nth-child(even) {
-  background-color: var(--color-bg-white);
-}
-
-.works table th,
-.works table td {
-  border: none;
+.work-metadata__item {
+  display: grid;
+  grid-template-columns: 12em minmax(0, 1fr);
   padding: 3px 0;
-  vertical-align: top;
 }
 
-.works table th {
+.markdown-body .work-metadata dt {
+  margin: 0;
   text-align: left;
-  width: 12em;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.markdown-body .work-metadata dd,
+.markdown-body .work-metadata__values {
+  margin: 0;
+  padding: 0;
+}
+
+.markdown-body .work-metadata__values {
+  list-style: none;
+}
+
+.markdown-body .work-metadata__values li + li {
+  margin-top: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .works img {

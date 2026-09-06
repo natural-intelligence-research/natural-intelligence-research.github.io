@@ -5,7 +5,8 @@
   youtube: "https://www.youtube.com/watch?v=GMVELwl2goc"
   basic:
     - label: "Director"
-      value: "松本泰章 Matsumoto Yasuaki"
+      value:
+        - "松本泰章 Matsumoto Yasuaki"
     - label: "Systems Engineering"
       value:
         - "Nisiyama Akio"
@@ -19,7 +20,8 @@
         - "TOA株式会社"
   detail:
     - label: "主催"
-      value: "嵯峨芸・嵯峨美 同窓会"
+      value:
+        - "嵯峨芸・嵯峨美 同窓会"
     - label: "2026"
       value:
         - "嵯峨美術大学・嵯峨美術短期大学 大阪サテライトキャンパス弘洲会館"
@@ -35,15 +37,18 @@
         - "上田香"
         - "岩﨑陽子"
     - label: "Director"
-      value: "松本泰章"
+      value:
+        - "松本泰章"
     - label: "Systems Engineering"
       value:
         - "西山明雄"
         - "瀬川浩司"
     - label: "Polymer Chemistry"
-      value: "榎本雅穗"
+      value:
+        - "榎本雅穗"
     - label: "Weaving"
-      value: "桂機業店"
+      value:
+        - "桂機業店"
   detail:
     - label: "Cooperation"
       value:
@@ -61,9 +66,11 @@
   youtube: "https://www.youtube.com/watch?v=Qltpray_NBg"
   basic:
     - label: "監督"
-      value: "松本泰章"
+      value:
+        - "松本泰章"
     - label: "制作"
-      value: "ideätekt"
+      value:
+        - "ideätekt"
     - label: "協力"
       value:
         - "西山明雄（心拍変動センサーシステム）"
@@ -87,19 +94,26 @@
   youtube: "https://www.youtube.com/watch?v=D0-A_00wR5U"
   basic:
     - label: "制作"
-      value: "松本泰章"
+      value:
+        - "松本泰章"
     - label: "原案"
-      value: "砥綿正之 松本泰章"
+      value:
+        - "砥綿正之 松本泰章"
     - label: "プログラミング"
-      value: "人長果月"
+      value:
+        - "人長果月"
     - label: "モデル"
-      value: "須藤絢乃"
+      value:
+        - "須藤絢乃"
     - label: "サウンド"
-      value: "吹田哲二郎"
+      value:
+        - "吹田哲二郎"
     - label: "タイポグラフィー"
-      value: "Nicole Schmid"
+      value:
+        - "Nicole Schmid"
     - label: "VRシュミレーション"
-      value: "西山明雄"
+      value:
+        - "西山明雄"
   detail:
     - label: "協力"
       value:
@@ -114,9 +128,11 @@
         - "認定NPO 法人アメニティ2000協会"
         - "Dongree　中井浩史　川野昌通"
     - label: "助成"
-      value: "JSPS 科研費20H01223"
+      value:
+        - "JSPS 科研費20H01223"
     - label: "2022"
-      value: "京都市立芸術大学ギャラリー @KCUA"
+      value:
+        - "京都市立芸術大学ギャラリー @KCUA"
 
 - title: "Box of Eurydice"
   images:
@@ -125,19 +141,26 @@
   youtube: "https://www.youtube.com/watch?v=5ysPcpWR_EU"
   basic:
     - label: "監督"
-      value: "松本泰章"
+      value:
+        - "松本泰章"
     - label: "制作"
-      value: "松本泰章"
+      value:
+        - "松本泰章"
     - label: "サウンド"
-      value: "吹田哲二郎"
+      value:
+        - "吹田哲二郎"
     - label: "プログラミング"
-      value: "西山明雄"
+      value:
+        - "西山明雄"
     - label: "桐箱"
-      value: "箱藤株式会社"
+      value:
+        - "箱藤株式会社"
     - label: "銀器"
-      value: "清課堂"
+      value:
+        - "清課堂"
     - label: "調香"
-      value: "Scenery Scent 井上香苗"
+      value:
+        - "Scenery Scent 井上香苗"
   detail:
     - label: "2017-2019"
       value:
@@ -166,9 +189,11 @@
         - "松本泰章"
         - "砥綿正之"
     - label: "撮影協力"
-      value: "西山明雄"
+      value:
+        - "西山明雄"
     - label: "編集"
-      value: "人長果月"
+      value:
+        - "人長果月"
   detail:
     - label: "2015"
       value:
