@@ -163,27 +163,12 @@ pre {
   word-wrap: break-word;
 }
 
-.site-content::before,
-.site-content::after {
-  display: table;
-  content: "";
-}
-
-.site-content::after {
-  clear: both;
-}
-
 .site-content > *:first-child {
   margin-top: 0 !important;
 }
 
 .site-content > *:last-child {
   margin-bottom: 0 !important;
-}
-
-.site-content a:not([href]) {
-  color: inherit;
-  text-decoration: none;
 }
 
 .site-content p,
