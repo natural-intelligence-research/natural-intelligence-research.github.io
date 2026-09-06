@@ -5,3 +5,5 @@ detail: メンバーはアーティストとエンジニアが大学や企業の
 lang: ja-JP
 theme: jekyll-theme-primer
 github: [metadata]
+exclude:
+  - docs
