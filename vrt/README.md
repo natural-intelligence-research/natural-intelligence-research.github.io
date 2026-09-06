@@ -5,7 +5,7 @@ The tests compare screenshots of `/`, `/projects`, and `/team` in desktop Chromi
 Build the site from the repository root, then run the tests:
 
 ```sh
-docker compose run --rm jekyll jekyll build
+docker compose run --rm jekyll sh -c 'bundle install && bundle exec jekyll build'
 cd vrt
 npm ci
 npx playwright install chromium

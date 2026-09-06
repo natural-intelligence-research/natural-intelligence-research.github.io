@@ -27,7 +27,7 @@ jobs:
         working-directory: vrt
         run: npx playwright install --with-deps chromium
       - name: Build Jekyll site
-        run: docker compose run --rm jekyll jekyll build
+        run: docker compose run --rm jekyll sh -c 'bundle install && bundle exec jekyll build'
       - name: Run visual regression tests
         working-directory: vrt
         run: npm test
