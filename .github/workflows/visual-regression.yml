@@ -26,10 +26,8 @@ jobs:
       - name: Install Chromium
         working-directory: vrt
         run: npx playwright install --with-deps chromium
-      - name: Start Jekyll
-        run: docker compose up -d
-      - name: Wait for Jekyll
-        run: curl --fail --retry 15 --retry-connrefused http://127.0.0.1:4000/projects
+      - name: Build Jekyll site
+        run: docker compose run --rm jekyll jekyll build
       - name: Run visual regression tests
         working-directory: vrt
         run: npm test
