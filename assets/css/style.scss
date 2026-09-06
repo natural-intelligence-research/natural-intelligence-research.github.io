@@ -152,7 +152,7 @@
 .site-content dl dt {
   padding: 0;
   margin-top: var(--space-md);
-  font-size: var(--font-size-base);
+  font-size: 1em;
   font-style: italic;
   font-weight: 600;
 }
@@ -238,7 +238,7 @@ nav a:hover {
 /* ==========================================================================
    Base Utilities
    ========================================================================== */
-.markdown-body h1 {
+.site-content h1 {
   display: none;
 }
 
@@ -341,24 +341,24 @@ nav a:hover {
   padding: 3px 0;
 }
 
-.markdown-body .work-metadata dt {
+.site-content .work-metadata dt {
   margin: 0;
   text-align: left;
   font-style: normal;
   font-weight: 600;
 }
 
-.markdown-body .work-metadata dd,
-.markdown-body .work-metadata__values {
+.site-content .work-metadata dd,
+.site-content .work-metadata__values {
   margin: 0;
   padding: 0;
 }
 
-.markdown-body .work-metadata__values {
+.site-content .work-metadata__values {
   list-style: none;
 }
 
-.markdown-body .work-metadata__values li + li {
+.site-content .work-metadata__values li + li {
   margin-top: 0;
 }
 
