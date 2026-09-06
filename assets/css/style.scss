@@ -1,5 +1,9 @@
 --- 
---- 
+---
+
+$breakpoint-navigation: 414px;
+$breakpoint-stacked-layout: 768px;
+$breakpoint-work-grid: 769px;
 
 /* ==========================================================================
    CSS Variables / Theme Settings
@@ -9,6 +13,8 @@
   --color-text: #24292e;
   --color-link: #0366d6;
   --color-border: #dddddd;
+  --color-heading-border: #eaecef;
+  --color-muted: #6a737d;
   --color-bg-light: #f0f0f0;
   --color-bg-white: #ffffff;
   --color-overlay: rgba(255, 255, 255, 0.5);
@@ -206,13 +212,13 @@ pre {
 .site-content h1 {
   padding-bottom: 0.3em;
   font-size: 2em;
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 1px solid var(--color-heading-border);
 }
 
 .site-content h2 {
   padding-bottom: 0.3em;
   font-size: 1.5em;
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 1px solid var(--color-heading-border);
 }
 
 .site-content h3 { font-size: 1.25em; }
@@ -221,7 +227,7 @@ pre {
 
 .site-content h6 {
   font-size: 0.85em;
-  color: #6a737d;
+  color: var(--color-muted);
 }
 
 /* Page titles are supplied by the header; retain the document outline without displaying them. */
@@ -330,7 +336,7 @@ nav a:hover {
   background-color: var(--color-bg-light);
 }
 
-@media (max-width: 414px) {
+@media (max-width: $breakpoint-navigation) {
   nav {
     width: 100%;
     justify-content: flex-end;
@@ -394,7 +400,7 @@ nav a:hover {
   margin: 2em 0 0 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-stacked-layout) {
   .hero-area .inner {
     padding: 0 10%;
   }
@@ -416,13 +422,13 @@ nav a:hover {
 }
 
 /* PC表示時のみ order を変更 */
-@media (min-width: 769px) {
+@media (min-width: $breakpoint-work-grid) {
   .content-2 { order: 4; }
   .content-3 { order: 2; }
   .content-4 { order: 3; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-stacked-layout) {
   .works section {
     width: 100%;
   }
@@ -516,7 +522,7 @@ nav a:hover {
 }
 
 .dl-item + .dl-item {
-  margin-top: 8px;
+  margin-top: var(--space-sm);
 }
 
 .dl-list .dl-item dt {
