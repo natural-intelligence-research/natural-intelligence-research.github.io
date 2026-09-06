@@ -1,5 +1,9 @@
 --- 
---- 
+---
+
+$breakpoint-navigation: 414px;
+$breakpoint-stacked-layout: 768px;
+$breakpoint-work-grid: 769px;
 
 /* ==========================================================================
    CSS Variables / Theme Settings
@@ -9,6 +13,8 @@
   --color-text: #24292e;
   --color-link: #0366d6;
   --color-border: #dddddd;
+  --color-heading-border: #eaecef;
+  --color-muted: #6a737d;
   --color-bg-light: #f0f0f0;
   --color-bg-white: #ffffff;
   --color-overlay: rgba(255, 255, 255, 0.5);
@@ -157,27 +163,12 @@ pre {
   word-wrap: break-word;
 }
 
-.site-content::before,
-.site-content::after {
-  display: table;
-  content: "";
-}
-
-.site-content::after {
-  clear: both;
-}
-
 .site-content > *:first-child {
   margin-top: 0 !important;
 }
 
 .site-content > *:last-child {
   margin-bottom: 0 !important;
-}
-
-.site-content a:not([href]) {
-  color: inherit;
-  text-decoration: none;
 }
 
 .site-content p,
@@ -206,13 +197,13 @@ pre {
 .site-content h1 {
   padding-bottom: 0.3em;
   font-size: 2em;
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 1px solid var(--color-heading-border);
 }
 
 .site-content h2 {
   padding-bottom: 0.3em;
   font-size: 1.5em;
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 1px solid var(--color-heading-border);
 }
 
 .site-content h3 { font-size: 1.25em; }
@@ -221,7 +212,7 @@ pre {
 
 .site-content h6 {
   font-size: 0.85em;
-  color: #6a737d;
+  color: var(--color-muted);
 }
 
 /* Page titles are supplied by the header; retain the document outline without displaying them. */
@@ -278,7 +269,7 @@ pre {
 }
 
 .footer-copyright {
-  text-align: center !important;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -308,11 +299,11 @@ pre {
   display: block;
 }
 
-nav {
+.site-nav {
   display: flex;
 }
 
-nav a {
+.site-nav a {
   display: inline-flex;
   align-items: center;
   padding: 0 var(--space-md);
@@ -322,23 +313,23 @@ nav a {
   transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
-nav a.is-current {
+.site-nav a.is-current {
   font-weight: 700;
 }
 
-nav a:hover {
+.site-nav a:hover {
   background-color: var(--color-bg-light);
 }
 
-@media (max-width: 414px) {
-  nav {
+@media (max-width: $breakpoint-navigation) {
+  .site-nav {
     width: 100%;
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: var(--space-xs);
   }
 
-  nav a {
+  .site-nav a {
     padding: 0.75rem 0.75rem;
     height: auto;
   }
@@ -394,7 +385,7 @@ nav a:hover {
   margin: 2em 0 0 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-stacked-layout) {
   .hero-area .inner {
     padding: 0 10%;
   }
@@ -403,12 +394,14 @@ nav a:hover {
 /* ==========================================================================
    Works Section
    ========================================================================== */
-.works {
+.work {
   display: flex;
   flex-wrap: wrap;
 }
 
-.works section {
+.work__summary,
+.work__details,
+.work__image {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -416,25 +409,27 @@ nav a:hover {
 }
 
 /* PC表示時のみ order を変更 */
-@media (min-width: 769px) {
-  .content-2 { order: 4; }
-  .content-3 { order: 2; }
-  .content-4 { order: 3; }
+@media (min-width: $breakpoint-work-grid) {
+  .work__details { order: 4; }
+  .work__image--primary { order: 2; }
+  .work__image--secondary { order: 3; }
 }
 
-@media (max-width: 768px) {
-  .works section {
+@media (max-width: $breakpoint-stacked-layout) {
+  .work__summary,
+  .work__details,
+  .work__image {
     width: 100%;
   }
 }
 
-.works h3 {
+.work h3 {
   font-size: var(--font-size-lg);
   color: var(--color-text);
   margin: 1em var(--space-lg);
 }
 
-.works .work-metadata {
+.work .work-metadata {
   font-size: var(--font-size-sm);
   margin: var(--space-md) var(--space-lg);
   width: calc(100% - (var(--space-lg) * 2));
@@ -479,7 +474,7 @@ nav a:hover {
   border: 0;
 }
 
-.works img {
+.work img {
   max-width: 100%;
   height: var(--works-img-height);
   object-fit: cover;
@@ -516,7 +511,7 @@ nav a:hover {
 }
 
 .dl-item + .dl-item {
-  margin-top: 8px;
+  margin-top: var(--space-sm);
 }
 
 .dl-list .dl-item dt {
