@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div>
-  <div id="about" class="hero-area">
+  <div id="about" class="hero-area" style="--hero-background-image: url('{{ '/assets/images/hero-bg.jpg' | relative_url }}');">
     <div class="hero-area__inner">
       <img src="{{ 'assets/images/nir-logo.png' | relative_url }}" alt="{{ site.title }}" />
       <p>{{ site.description }}</p>
@@ -17,8 +17,8 @@ layout: default
     </div>
     <div class="contents-box">
       <dl class="dl-list">
-	{% assign information = site.data.information | where: "done", false %}
-	{% for item in information %}
+        {% assign information = site.data.information | where: "done", false %}
+        {% for item in information %}
         <div class="dl-item">
           <dt>{{ item.title }}</dt>
           <dd>{{ item.detail | newline_to_br }}</dd>
@@ -27,11 +27,12 @@ layout: default
       </dl>
     </div>
   </div>
-<div id="recent-projects">
-  <div class="title-header">
-    <h2>Recent Projects</h2>
+  <div id="recent-projects">
+    <div class="title-header">
+      <h2>Recent Projects</h2>
+    </div>
+    {% for work in site.data.works limit:2 %}
+      {% include work.html %}
+    {% endfor %}
   </div>
-  {% for work in site.data.works limit:2 %}
-  {% include work.html %}
-  {% endfor %}
 </div>
