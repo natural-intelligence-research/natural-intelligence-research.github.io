@@ -424,6 +424,13 @@ dd {
   border: 0;
 }
 
+.site-content h1.visually-hidden {
+  display: block;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+}
+
 .work img {
   max-width: 100%;
   height: var(--works-img-height);
