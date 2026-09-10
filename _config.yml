@@ -6,3 +6,5 @@ lang: ja-JP
 github: [metadata]
 exclude:
   - docs
+  - vrt
+  - assets/images/works/original
