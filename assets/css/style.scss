@@ -173,11 +173,6 @@ dd {
   color: var(--color-muted);
 }
 
-/* Page titles are supplied by the header; retain the document outline without displaying them. */
-.site-content h1 {
-  display: none;
-}
-
 .site-content ul,
 .site-content ol {
   padding-left: 2em;
@@ -425,7 +420,6 @@ dd {
 }
 
 .site-content h1.visually-hidden {
-  display: block;
   padding: 0;
   margin: -1px;
   border: 0;
