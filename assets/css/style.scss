@@ -3,7 +3,6 @@
 
 $breakpoint-navigation: 414px;
 $breakpoint-stacked-layout: 768px;
-$breakpoint-work-grid: 769px;
 
 /* ==========================================================================
    CSS Variables / Theme Settings
@@ -336,7 +335,7 @@ dd {
 }
 
 /* PC表示時のみ order を変更 */
-@media (min-width: $breakpoint-work-grid) {
+@media (min-width: ($breakpoint-stacked-layout + 1px)) {
   .work__details { order: 4; }
   .work__image--primary { order: 2; }
   .work__image--secondary { order: 3; }
