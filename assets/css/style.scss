@@ -134,8 +134,7 @@ dd {
 }
 
 .site-content p,
-.site-content ul,
-.site-content dl {
+.site-content ul {
   margin-top: 0;
   margin-bottom: var(--space-md);
 }
@@ -188,23 +187,6 @@ dd {
 
 .site-content li + li {
   margin-top: 0.25em;
-}
-
-.site-content dl {
-  padding: 0;
-}
-
-.site-content dl dt {
-  padding: 0;
-  margin-top: var(--space-md);
-  font-size: 1em;
-  font-style: italic;
-  font-weight: 600;
-}
-
-.site-content dl dd {
-  padding: 0 var(--space-md);
-  margin-bottom: var(--space-md);
 }
 
 .site-content img {
@@ -466,6 +448,8 @@ dd {
 }
 
 .dl-list .dl-item dt {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-size: var(--font-size-base);
   font-weight: 600;
