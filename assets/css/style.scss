@@ -177,7 +177,7 @@ dd {
 }
 
 .site-content li {
-  word-wrap: break-all;
+  overflow-wrap: anywhere;
 }
 
 .site-content li > p {
