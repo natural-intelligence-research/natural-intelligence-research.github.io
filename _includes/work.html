@@ -1,5 +1,5 @@
-<div class="work">
-  <section class="work__summary">
+<article class="work">
+  <div class="work__summary">
     <h3>{{ work.title }}</h3>
     <dl class="work-metadata">
       {% for item in work.basic %}
@@ -19,9 +19,9 @@
         <dd><a href="{{ work.youtube }}">video</a></dd>
       </div>
     </dl>
-  </section>
-  
-  <section class="work__details">
+  </div>
+
+  <div class="work__details">
     <dl class="work-metadata">
       {% for item in work.detail %}
       <div class="work-metadata__item">
@@ -36,13 +36,13 @@
       </div>
       {% endfor %}
     </dl>
-  </section>
-  
-  <section class="work__image work__image--primary">
+  </div>
+
+  <div class="work__image work__image--primary">
     <img src="{{ work.images[0] }}" alt="{{ work.title }} fig. 1" />
-  </section>
-  
-  <section class="work__image work__image--secondary">
+  </div>
+
+  <div class="work__image work__image--secondary">
     <img src="{{ work.images[1] }}" alt="{{ work.title }} fig. 2" />
-  </section>
-</div>
+  </div>
+</article>
