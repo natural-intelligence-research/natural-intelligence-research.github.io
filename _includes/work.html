@@ -1,6 +1,7 @@
 <article class="work">
   <div class="work__summary">
-    <h3>{{ work.title }}</h3>
+    {% assign heading_level = include.heading_level | default: 3 %}
+    <h{{ heading_level }} class="work__title">{{ work.title }}</h{{ heading_level }}>
     <dl class="work-metadata">
       {% for item in work.basic %}
       <div class="work-metadata__item">

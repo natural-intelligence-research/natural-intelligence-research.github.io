@@ -33,7 +33,7 @@ layout: default
       <h2>Recent Projects</h2>
     </div>
     {% for work in site.data.works limit:2 %}
-      {% include work.html %}
+      {% include work.html heading_level=3 %}
     {% endfor %}
   </div>
 </div>
