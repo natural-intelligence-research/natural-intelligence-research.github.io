@@ -1,6 +1,7 @@
-<div class="work">
-  <section class="work__summary">
-    <h3>{{ work.title }}</h3>
+<article class="work">
+  <div class="work__summary">
+    {% assign heading_level = include.heading_level | default: 3 %}
+    <h{{ heading_level }} class="work__title">{{ work.title }}</h{{ heading_level }}>
     <dl class="work-metadata">
       {% for item in work.basic %}
       <div class="work-metadata__item">
@@ -19,9 +20,9 @@
         <dd><a href="{{ work.youtube }}">video</a></dd>
       </div>
     </dl>
-  </section>
-  
-  <section class="work__details">
+  </div>
+
+  <div class="work__details">
     <dl class="work-metadata">
       {% for item in work.detail %}
       <div class="work-metadata__item">
@@ -36,13 +37,13 @@
       </div>
       {% endfor %}
     </dl>
-  </section>
-  
-  <section class="work__image work__image--primary">
-    <img src="{{ work.images[0] }}" alt="{{ work.title }} fig. 1" />
-  </section>
-  
-  <section class="work__image work__image--secondary">
-    <img src="{{ work.images[1] }}" alt="{{ work.title }} fig. 2" />
-  </section>
-</div>
+  </div>
+
+  <div class="work__image work__image--primary">
+    <img src="{{ work.images[0] | relative_url }}" alt="{{ work.title }} fig. 1" />
+  </div>
+
+  <div class="work__image work__image--secondary">
+    <img src="{{ work.images[1] | relative_url }}" alt="{{ work.title }} fig. 2" />
+  </div>
+</article>

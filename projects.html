@@ -3,11 +3,10 @@ layout: default
 ---
 
 <div id="projects">
-  <h1 class="visually-hidden">Projects</h1>
   <div class="title-header">
-    <h2>Projects</h2>
+    <h1>Projects</h1>
   </div>
   {% for work in site.data.works %}
-  {% include work.html %}
+  {% include work.html heading_level=2 %}
   {% endfor %}
 </div>

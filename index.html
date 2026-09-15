@@ -6,7 +6,7 @@ layout: default
   <h1 class="visually-hidden">{{ site.title }}</h1>
   <div id="about" class="hero-area">
     <div class="hero-area__inner">
-      <img src="{{ 'assets/images/nir-logo.png' | relative_url }}" alt="{{ site.title }}" />
+      <img src="{{ '/assets/images/nir-logo.png' | relative_url }}" alt="{{ site.title }}" />
       <p>{{ site.description }}</p>
       <p>{{ site.detail }}</p>
     </div>
@@ -33,7 +33,7 @@ layout: default
       <h2>Recent Projects</h2>
     </div>
     {% for work in site.data.works limit:2 %}
-      {% include work.html %}
+      {% include work.html heading_level=3 %}
     {% endfor %}
   </div>
 </div>
