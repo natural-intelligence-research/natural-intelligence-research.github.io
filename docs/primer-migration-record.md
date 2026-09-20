@@ -11,12 +11,10 @@ The site no longer relies on the Primer Jekyll theme for rendering. This documen
 
 ## Verification
 
-Each migration step passed the Jekyll build and the desktop and mobile visual regression suite without updating baseline images:
+Each migration step passed the Jekyll build:
 
 ```sh
 docker compose run --rm jekyll sh -c 'bundle install && bundle exec jekyll build'
-docker run --rm --volume "$PWD:/work" --workdir /work/vrt \
-  mcr.microsoft.com/playwright:v1.63.0-jammy sh -c 'npm ci && npm test'
 ```
 
 `github-pages` remains the deployment dependency in `Gemfile`. It includes Primer among its transitive dependencies, but this site no longer imports or configures that theme.

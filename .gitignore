@@ -5,4 +5,5 @@ _site/
 .vscode
 **/*.swp
 env
+vrt/
 Gemfile.lock
