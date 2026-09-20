@@ -5,8 +5,6 @@ detail: メンバーはアーティストとエンジニアが大学や企業の
 lang: ja-JP
 github: [metadata]
 exclude:
-  - docs
-  - vrt
   - script
   - Gemfile
   - README.md
